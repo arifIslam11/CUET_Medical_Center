@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="background">
+                <div class="page">
+                    <a href="Default.aspx" id="logo">CUET Medical Center</a>
+                    <div class="sidebar">
+                        <ul>
+                            <li class="selected">
+                                <a href="Default.aspx">Home</a>
+                            </li>
+                            <li>
+                                <a href="Login.aspx">Login</a>
+                            </li>
+                            <li>
+                                <a href="AboutUs.aspx">About</a>
+                            </li>
+                            <li>
+                                <a href="Services.aspx">Services</a>
+                            </li>
+                            <li>
+                                <a href="Register.aspx">Register</a>
+                            </li>
+                            <li>
+                                <a href="Contact_Us.aspx">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="first">
+                            <div>
+                                <h3>Chief Medical Officer </h3>
+                                <img src="images/sakimedicalofficer.jpg" alt="" style="width: 185px; height: 190px">
+                                <p>
+                                    &quot;I and all of my colleagues are very proud to serve the students of CUET&quot;,Dr. Mir Murtaza Reza Khan,Chief Doctor
+					            </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Our Aim</h3>
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <img src="images/group.jpg" alt="" style="width: 177px">
+                                <p>
+                                    Our aim is to provide better medical facilities to all of the students,teachers and stuff of the CUET in order to ensure a healthy environment. To fulfill our aim any kind of suggestions will cordially be accepted.We believe that we can make the environment of CUET better together.&nbsp;
+					            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="home">
+                            <div class="featured">
+                                <img src="images/Capture1.jpg" alt="" style="width:750px; height:300px">
+                                <div>
+                                    <p>
+                                        CHITTAGONG UNIVERSITY OF ENGINEERING AND TECHNOLOGY MEDICAL CENTER.
+						
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                                <div>
+                                    <h4>Services</h4>
+                                    <a href="services.html">
+                                        <img src="images/group3.jpg" alt=""></a>
+                                    <ul>
+                                        <li>
+                                            <a href="Services.aspx">Critical Care</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Community Health</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Blood Bank</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Birth Certificate</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Visiting Consultant</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Ambulance Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Free Medicine</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Vaccination</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Tests</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx"> Monthly Health Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="Services.aspx">Emergency Care</a>
+                                        </li>
+                                    </ul>
+                                    <span><a href="Services.aspx">Learn More</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <div>
+                                <h4>About Us</h4>
+                                <p>
+                                    This website has been designed by Arif, Emrul, Sharif & Nishat.
+					
+                                </p>
+                                <a href="AboutUs.aspx">Go To About</a>
+                            </div>
+                            <div>
+                                <h4>Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="Default.aspx">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="Login.aspx">LogIn</a>
+                                    </li>
+                                    <li>
+                                        <a href="AboutUs.aspx">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="Services.aspx">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="Register.aspx">Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="Contact_Us.aspx">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="connect">
+                                <h4>Keep In Touch</h4>
+                                <a href="https://twitter.com/" id="twitter">twitter</a> <a href="https://www.facebook.com/" id="facebook">facebook</a> <a href="https://www.facebook.com/" id="googleplus">google+</a>
+                            </div>
+                        </div>
+                        <p>
+                            &#169; Copyright 2012. All rights reserved
+			
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

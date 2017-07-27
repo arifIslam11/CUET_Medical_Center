@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AfterLoginAdmin.master.cs" Inherits="AfterLoginAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="background">
+                <div class="page">
+                    <a href="AdminProfile.aspx" id="logo">CUET Medical Center</a>
+                    <p style="text-align: right">
+                        Welcome:
+                        <asp:Label ID="current_user" runat="server" Text="Label"></asp:Label>
+                    </p>
+                    <p style="text-align: right">
+                        <asp:Button ID="Button1" runat="server" Text="Logout" BackColor="#11716F" OnClick="Button1_Click" OnClientClick="return confirm('Are you sure?');" />
+                    </p>
+                    <div class="sidebar">
+                        <ul>
+                            <li class="selected">
+                                <a href="AdminProfile.aspx" style="font-size: 9px">Profile</a>
+                            </li>
+                            <li>
+                                <a href="AddAdmin.aspx" style="font-size: 9px">Add Admin</a>
+                            </li>
+                            <li>
+                                <a href="AdminStudentInfo.aspx" style="font-size: 9px">Student Info</a>
+                            </li>
+                            <li>
+                                <a href="AdminEditSchedule.aspx" style="font-size: 9px">Edit Schedule</a>
+                            </li>
+                        </ul>
+                        <div class="first">
+                            <div>
+                                <h3>Chief Medical Officer </h3>
+                                <img src="images/sakimedicalofficer.jpg" alt="" style="width: 185px; height: 190px">
+                                <p>
+                                    &quot;I and all of my colleagues are very proud to serve the students of CUET&quot;,Dr. Mir Murtaza Reza Khan,Chief Doctor
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Our Aim</h3>
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <img src="images/group.jpg" alt="" style="width: 177px">
+                                <p>
+                                    Our aim is to provide better medical facilities to all of the students,teachers and stuff of the CUET in order to ensure a healthy environment. To fulfill our aim any kind of suggestions will cordially be accepted.We believe that we can make the environment of CUET better together.&nbsp;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="home">
+                            <div class="featured">
+                                <img src="images/Capture1.jpg" alt="" style="width: 750px; height: 300px">
+                                <div>
+                                    <p>
+                                        CHITTAGONG UNIVERSITY OF ENGINEERING AND TECHNOLOGY MEDICAL CENTER.
+						
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                                <div>
+                                    <h4>Services</h4>
+                                    <img src="images/group3.jpg" alt="">
+                                    <ul>
+                                        <li>Critical Care
+                                        </li>
+                                        <li>Community Health
+                                        </li>
+                                        <li>Blood Bank
+                                        </li>
+                                        <li>Birth Certificate
+                                        </li>
+                                        <li>Visiting Consultant
+                                        </li>
+                                        <li>Ambulance Service
+                                        </li>
+                                        <li>Free Medicine
+                                        </li>
+                                        <li>Vaccination
+                                        </li>
+                                        <li>Tests
+                                        </li>
+                                        <li>Monthly Health Report
+                                        </li>
+                                        <li>Emergency Care
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <div>
+                                <h4>About Us</h4>
+                                <p>
+                                    This website has been designed by Arif, Emrul, Sharif & Nishat.
+					
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="AdminProfile.aspx">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="AddAdmin.aspx">Add Admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="AdminStudentInfo.aspx">Student Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="AdminEditSchedule.aspx">Edit Schedule</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="connect">
+                                <h4>Keep In Touch</h4>
+                                <a href="https://twitter.com/" id="twitter">twitter</a> <a href="https://www.facebook.com/" id="facebook">facebook</a> <a href="https://www.facebook.com/" id="googleplus">google+</a>
+                            </div>
+                        </div>
+                        <p>
+                            &#169; Copyright 2012. All rights reserved
+			
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
